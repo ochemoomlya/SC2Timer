@@ -1,0 +1,12 @@
+C:\Users\Дремпелянин\Desktop\key_preview\key preview\key preview\bin\Release\key preview.exe
+C:\Users\Дремпелянин\Desktop\key_preview\key preview\key preview\bin\Release\key preview.pdb
+C:\Users\Дремпелянин\Desktop\key_preview\key preview\key preview\obj\Release\key preview.csprojResolveAssemblyReference.cache
+C:\Users\Дремпелянин\Desktop\key_preview\key preview\key preview\obj\Release\key_preview.Properties.Resources.resources
+C:\Users\Дремпелянин\Desktop\key_preview\key preview\key preview\obj\Release\key preview.csproj.GenerateResource.Cache
+C:\Users\Дремпелянин\Desktop\key_preview\key preview\key preview\obj\Release\key preview.exe
+C:\Users\Дремпелянин\Desktop\key_preview\key preview\key preview\obj\Release\key preview.pdb
+C:\Users\Дремпелянин\Desktop\key_preview\key preview\key preview\obj\Release\key_preview.mainForm.resources
+C:\Users\Дремпелянин\Desktop\key_preview\key preview\key preview\bin\Release\key preview.exe.config
+C:\Users\Дремпелянин\Desktop\Новая папка\key_preview\key preview\key preview\bin\Release\key preview.exe.config
+C:\Users\Дремпелянин\Desktop\Новая папка\key_preview\key preview\key preview\obj\Release\key preview.exe
+C:\Users\Дремпелянин\Desktop\Новая папка\key_preview\key preview\key preview\obj\Release\key preview.pdb

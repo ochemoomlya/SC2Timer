@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="367d9f3e-6932-4593-9a16-6a7216c6b554" name="UMLComponentDiagram1" linkedPackageId="53e693f5-23f5-4ba5-a88f-4f77978449bd" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <ownedCommentsInternal>
+    <comment Id="5f3082ab-bd5c-4573-bed4-af5ce37667be">
+      <elementDefinition Id="b6f7c011-4210-43c5-b2b9-2c122b7a768f" />
+      <body>Events
+ловит сочитание из указанных клавиш, 
+ловит конкретное сочитание,
+
+ловит конкретную последовательность,
+
+ловит нажатие клавиши,
+ловит конкретную клавишу, 
+
+//прослушевание запущено</body>
+      <annotatedElements>
+        <providedInterfaceMoniker Id="2f04f654-9c89-465d-9e7a-5431a6674498" LastKnownName="Port1" />
+      </annotatedElements>
+    </comment>
+    <comment Id="db533a61-f5ab-43cc-9dc5-ea83e956e430">
+      <elementDefinition Id="fecec1a7-7850-4e96-a1f4-4ac8e82afca8" />
+      <body>Установка искомой комбинации/последовательности</body>
+      <annotatedElements>
+        <providedInterfaceMoniker Id="54081d08-12a9-4c77-b2d3-6903f064278d" LastKnownName="Port2" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="702ca1e2-0efb-41db-b48e-ff925a3a289a">
+      <profileInstance Id="a70ed7aa-3cea-40c3-9dd4-f15ab29b6e62" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dc82c9c4-3339-4514-9a36-76f6b1c962e2">
+      <profileInstance Id="78638439-8df1-461b-aa1d-fc98817aba1b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="b581b02c-742f-4da9-be9e-1e7271b344e6" name="KeyboardSpy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d17db528-5354-4696-a320-b85e51c3d9a3" />
+        <ownedAttributesInternal>
+          <part Id="d12cc0b9-e6a1-4d6a-8328-59865f5cc8cc" name="CombinationChecker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="22e1dbf4-d428-40eb-a44b-86fc0c520f28" />
+            <type_NamedElement>
+              <componentMoniker Id="b5b064a9-f541-4660-8f63-57d37e1fb16c" LastKnownName="Component1" />
+            </type_NamedElement>
+          </part>
+          <part Id="487c7893-c07d-4e21-a3c3-50fc1c6ed569" name="SequenceChecker" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="0d711b1e-d3a9-4eaa-b033-b33a51eb3a8b" />
+            <type_NamedElement>
+              <componentMoniker Id="81186385-2c82-4190-afd4-625c2bdc7f84" LastKnownName="Component2" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="2f04f654-9c89-465d-9e7a-5431a6674498" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="dc8f6d36-115f-4bbe-82c9-9ccbfd31e8b9" />
+            <type_NamedElement>
+              <interfaceMoniker Id="49ff1c35-d97c-40b6-8ace-7adf8dc591fb" LastKnownName="events" />
+            </type_NamedElement>
+          </providedInterface>
+          <providedInterface Id="54081d08-12a9-4c77-b2d3-6903f064278d" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="ac6e4404-366a-4850-be90-0573b33ffa34" />
+            <type_NamedElement>
+              <interfaceMoniker Id="c4a2094b-1e66-4bb3-b680-06f6c7c9e264" LastKnownName="Configuration" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="b5b064a9-f541-4660-8f63-57d37e1fb16c" name="Component1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b16d017d-8919-40b9-9400-ec5437036d71" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="81186385-2c82-4190-afd4-625c2bdc7f84" name="Component2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4b7ad00d-08b9-4dd5-935c-61427f94932d" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="6725cb1d-82dc-4840-9b9a-fc727ff1b9aa" name="ConfigurationForm" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="39c96af1-6a01-4f99-9e12-40c3fcac8966" />
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="49ff1c35-d97c-40b6-8ace-7adf8dc591fb" name="events" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e4ad5eb5-7437-4f78-bb3f-7b660b6e6bd4" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="c4a2094b-1e66-4bb3-b680-06f6c7c9e264" name="Configuration" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="aff6a51a-1234-4987-a2aa-6fed7cb9613e" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="53e693f5-23f5-4ba5-a88f-4f77978449bd" name="ModelingProject">
+    <elementDefinition Id="24328682-2edf-40b5-bd9f-a85a7c0025c5" />
+  </package>
+</componentModel>
